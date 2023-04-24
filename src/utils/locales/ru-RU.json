@@ -1,0 +1,19 @@
+{
+    "ru-RU": {
+      "translation": {
+        "login":"Вход",
+        "email":"Email",
+        "email_placeholder":"Example@gmail.com",
+        "email_not_allowed_chars":"Неверный email",
+        "password":"Пароль",
+        "password_placeholder":"Введите пароль",
+        "wrong_password":"Неверный пароль",
+        "or":"или",
+        "sign_in":"Войти",
+        "forgot_password":"Забыли пароль?",
+        "reset_password":"Восстановить",
+        "no_account":"Нет аккаунта?",
+        "signup":"Регистрация"
+      }
+    }
+}  

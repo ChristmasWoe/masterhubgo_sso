@@ -1,0 +1,9 @@
+.left-panel{
+    background-color: #1A1A1A;
+    border-radius: 20px;
+    height: 100%;
+    width: 696px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
