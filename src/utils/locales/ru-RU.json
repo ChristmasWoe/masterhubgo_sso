@@ -13,7 +13,8 @@
         "forgot_password":"Забыли пароль?",
         "reset_password":"Восстановить",
         "no_account":"Нет аккаунта?",
-        "signup":"Регистрация"
+        "signup":"Регистрация",
+        "lang":"Язык"
       }
     }
 }  

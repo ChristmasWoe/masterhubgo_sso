@@ -1,0 +1,11 @@
+.signin-methods {
+    display: flex;
+    flex-direction: row;
+    height: 48px;
+    width: 100%;
+    margin-top: 24px;
+    justify-content: space-around;
+    & > svg {
+      cursor: pointer;
+    }
+  }

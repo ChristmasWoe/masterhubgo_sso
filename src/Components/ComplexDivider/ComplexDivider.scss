@@ -1,0 +1,23 @@
+.complex-divider {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    height: 18px;
+    & > div {
+      background: #8c8c8c;
+      height: 1px;
+      flex: 1;
+    }
+    & > p {
+      cursor: default;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 130.02%;
+      color: #8c8c8c;
+      margin: 0;
+    }
+  }

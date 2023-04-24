@@ -14,8 +14,38 @@ const resources = {
   "de-DE": de_DE["de-DE"],
 };
 
+function userLang() {
+  let userLang = navigator.language;
+  if (/^ru\b/.test(userLang)) {
+    return "ru-RU";
+  } else if (/^es\b/.test(userLang)) {
+    return "es-PA";
+  } else if (/^en\b/.test(userLang)) {
+    return "en-US";
+  } else if (/^fr\b/.test(userLang)) {
+    return "fr-FR";
+  } else if (/^pt\b/.test(userLang)) {
+    return "pt-BR";
+  } else if (/^it\b/.test(userLang)) {
+    return "it-IT";
+  } else if (/^tt\b/.test(userLang)) {
+    return "tt-RU";
+  } else {
+    return "en-US";
+  }
+}
+
+const getLang = () => {
+  if (localStorage.getItem("lang")) {
+    return localStorage.getItem("lang");
+  }
+  let lang = userLang();
+  localStorage.setItem("lang", lang);
+  return lang;
+};
+
 i18n.use(initReactI18next).init({
-  lng: "ru-RU",
+  lng: getLang(),
   fallbackLng: "en-US",
   resources,
   interpolation: {
