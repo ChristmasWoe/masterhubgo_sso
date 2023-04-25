@@ -1,11 +1,11 @@
 import React, { useState,useEffect } from "react";
 import "./Signup.scss";
 import { withTranslation } from "react-i18next";
-import SignMethods from "../SignMethods/SignMethods";
-import ComplexDivider from "../ComplexDivider/ComplexDivider";
-import SignButton from "../SignButton/SignButton";
-import ComplexInput from "../ComplexInput/ComplexInput";
-import HelpLine from "../HelpLine/HelpLine";
+import SignMethods from "../SignMethods/SignMethods.js";
+import ComplexDivider from "../ComplexDivider/ComplexDivider.js";
+import SignButton from "../SignButton/SignButton.js";
+import ComplexInput from "../ComplexInput/ComplexInput.js";
+import HelpLine from "../HelpLine/HelpLine.js";
 
 function validateEmail(email) {
   var re = /\S+@\S+\.\S+/;

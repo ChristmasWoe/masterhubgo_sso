@@ -87,14 +87,14 @@ module.exports = {
   plugins: [
     new webpack.ProgressPlugin(),
 
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: `${paths.public}/assets`,
-          to:"public"
-        }
-      ]
-    }),
+    // new CopyWebpackPlugin({
+    //   patterns: [
+    //     {
+    //       from: `${paths.public}/assets`,
+    //       to:"public"
+    //     }
+    //   ]
+    // }),
 
     new HtmlWebpackPlugin({
       template: `${paths.public}/index.html`,
