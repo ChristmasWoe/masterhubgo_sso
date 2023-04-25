@@ -1,9 +1,9 @@
 import React from "react";
 import "./SignButton.scss"
 
-const SignButton = ({label,...props}) => {
+const SignButton = ({label,disabled,...props}) => {
     return (
-        <button className="signButton">{label}</button>
+        <button disabled={disabled} className="signButton">{label}</button>
     )
 }
 

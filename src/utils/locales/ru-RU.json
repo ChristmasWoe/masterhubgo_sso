@@ -14,7 +14,16 @@
         "reset_password":"Восстановить",
         "no_account":"Нет аккаунта?",
         "signup":"Регистрация",
-        "lang":"Язык"
+        "lang":"Язык",
+        "sign_up":"Регистрация",
+        "username":"Имя пользователя",
+        "username_placeholder":"Devwise123",
+        "sign_up_button":"Зарегистрироваться",
+        "have_account":"У вас есть аккаунт?",
+        "sign_up_condition":"При регистрации я даю согласие на обработку своих персональных данных",
+        "privacy_policy":"Политика конфиденциальности",
+        "repeat_password":"Повторите пароль",
+        "password_not_match":"Пароли не совпадают"
       }
     }
 }  

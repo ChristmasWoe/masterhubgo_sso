@@ -11,10 +11,13 @@
     width: 100%;
     outline: none !important;
     border: none !important;
-    padding: 18px 174px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
     cursor: pointer;
     &:disabled {
       background: #adadad;
+      pointer-events: none;
     }
     &:hover {
       background: #2751ac;

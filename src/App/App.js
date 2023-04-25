@@ -7,6 +7,7 @@ import LeftPanel from "../Components/LeftPanel/LeftPanel";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "../Components/Login/Login"
 import LangSelect from "../Components/LangSelect/LangSelect";
+import Signup from "../Components/Signup/Signup";
 
 const App = ({ t, ...props }) => {
   const [lang,setLang] = useState(i18n.language)
@@ -24,7 +25,7 @@ const App = ({ t, ...props }) => {
         <LangSelect setValue={setLang} value={lang} />
         <Switch>
           <Route path="/signup">
-            {/* <About /> */}
+            <Signup />
           </Route>
           <Route path="/">
             <Login />

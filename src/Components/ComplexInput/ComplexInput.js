@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import "./ComplexInput.scss";
 
-const ComplexInput = ({onChange,label,value,isPassword,placeholder,error,onBlur,onFocus,...props}) => {
+const ComplexInput = ({onChange,label,value,isPassword,placeholder,error,onBlur,onFocus,hidePasswordToggle,...props}) => {
     const [showPassword, setShowPassword] = useState(false);
 
     return (
@@ -25,7 +25,7 @@ const ComplexInput = ({onChange,label,value,isPassword,placeholder,error,onBlur,
               placeholder={placeholder}
               className={error ? "error" : ""}
             />
-            {!isPassword?null: showPassword ? (
+            {!isPassword||hidePasswordToggle?null: showPassword ? (
               <svg
                 onClick={(e) => setShowPassword(!showPassword)}
                 width="24"

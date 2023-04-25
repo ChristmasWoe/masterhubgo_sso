@@ -5,6 +5,7 @@ import SignMethods from "../SignMethods/SignMethods";
 import ComplexDivider from "../ComplexDivider/ComplexDivider";
 import SignButton from "../SignButton/SignButton";
 import ComplexInput from "../ComplexInput/ComplexInput";
+import HelpLine from "../HelpLine/HelpLine";
 
 function validateEmail(email) {
   var re = /\S+@\S+\.\S+/;
@@ -26,7 +27,7 @@ const Login = ({ t, ...props }) => {
   const onEmailFocused = (e) => {
     setEmailError(null);
   };
-
+  const isSubmitDisabled = email.trim()==""||password.trim()==""||emailError||passwordError;
   return (
     <div className="login-wrapper">
       <div className="login">
@@ -41,7 +42,6 @@ const Login = ({ t, ...props }) => {
           onBlur={onEmailBlur}
           onFocus={onEmailFocused}
         />
-
         <ComplexInput
           onChange={(e) => setPassword(e.target.value)}
           label={t("password")}
@@ -50,22 +50,14 @@ const Login = ({ t, ...props }) => {
           placeholder={t("password_placeholder")}
           error={passwordError}
         />
-
         <ComplexDivider t={t} />
         <SignMethods />
-        <SignButton label={t("sign_in")} />
-
-        <div className="login-help-line">
-          <p>
-            {t("forgot_password")} <a>{t("reset_password")}</a>
-          </p>
-        </div>
-
-        <div className="login-help-line">
-          <p>
-            {t("no_account")} <a>{t("signup")}</a>
-          </p>
-        </div>
+        <SignButton disabled={isSubmitDisabled} label={t("sign_in")} />
+        <HelpLine
+          mainText={t("forgot_password")}
+          link_text={t("reset_password")}
+        />
+        <HelpLine   link="/signup" mainText={t("no_account")} link_text={t("signup")} />
       </div>
     </div>
   );

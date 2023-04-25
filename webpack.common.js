@@ -90,7 +90,8 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: `${paths.public}/assets`
+          from: `${paths.public}/assets`,
+          to:"public"
         }
       ]
     }),
