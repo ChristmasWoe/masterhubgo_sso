@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "http://christmaswoe.github.io/masterhubgo_sso",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --mode development --config ./webpack.config.js",
     "startdev": "webpack serve --mode development --config ./webpack.config.js",
-    "build": "webpack build --config ./webpack.config.prod.js"
+    "build": "webpack build --config ./webpack.config.prod.js",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +17,7 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@mui/material": "^5.12.1",
+    "gh-pages": "^5.0.0",
     "i18next": "^22.4.5",
     "immer": "^10.0.1",
     "react": "^17.0.2",

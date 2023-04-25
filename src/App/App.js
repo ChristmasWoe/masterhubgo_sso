@@ -9,6 +9,7 @@ import Login from "../Components/Login/Login.js"
 import LangSelect from "../Components/LangSelect/LangSelect.js";
 import Signup from "../Components/Signup/Signup.js";
 
+
 const App = ({ t, ...props }) => {
   const [lang,setLang] = useState(i18n.language)
 
@@ -17,14 +18,13 @@ const App = ({ t, ...props }) => {
     localStorage.setItem("lang",lang)
   },[lang])
 
- 
   return (
-    <Router>
+    <Router history={customHistory}>
       <div className="app">
         <LeftPanel />
         <LangSelect setValue={setLang} value={lang} />
         <Switch>
-          <Route path="/signup">
+          <Route path={process.env.PUBLIC_URL+"signup"}>
             <Signup />
           </Route>
           <Route path="/">

@@ -43,7 +43,7 @@ const Login = ({ t, ...props }) => {
           onFocus={onEmailFocused}
         />
         <ComplexInput
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setPassword(e.target.value.trim())}
           label={t("password")}
           value={password}
           isPassword={true}

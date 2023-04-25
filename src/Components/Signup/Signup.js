@@ -71,7 +71,7 @@ const Signup = ({ t, ...props }) => {
         />
 
         <ComplexInput
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setPassword(e.target.value.trim())}
           label={t("password")}
           value={password}
           isPassword={true}
@@ -80,7 +80,7 @@ const Signup = ({ t, ...props }) => {
         />
 
         <ComplexInput
-          onChange={(e) => setPasswordR(e.target.value)}
+          onChange={(e) => setPasswordR(e.target.value.trim())}
           label={t("repeat_password")}
           value={passwordR}
           isPassword={true}

@@ -5,7 +5,7 @@ const webpack = require('webpack')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-
+const Dotenv = require('dotenv-webpack')
 const babelLoader = {
   loader: 'babel-loader',
   options: {
@@ -115,5 +115,8 @@ module.exports = {
     new webpack.ProvidePlugin({
       React: 'react'
     }),
+    new Dotenv({
+      path: './.env'
+    })
   ]
 }
