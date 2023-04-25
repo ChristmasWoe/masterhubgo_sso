@@ -19,12 +19,12 @@ const App = ({ t, ...props }) => {
   },[lang])
 
   return (
-    <Router history={customHistory}>
+    <Router>
       <div className="app">
         <LeftPanel />
         <LangSelect setValue={setLang} value={lang} />
         <Switch>
-          <Route path={process.env.PUBLIC_URL+"signup"}>
+          <Route path={"/signup"}>
             <Signup />
           </Route>
           <Route path="/">
