@@ -1,6 +1,29 @@
 {
-    "uk-UA": {
-      "translation": {
-      }
+  "uk-UA": {
+    "translation": {
+      "login": "логін",
+      "email": "Електронна пошта",
+      "email_placeholder": "Example@gmail.com",
+      "email_not_allowed_chars": "Недійсна електронна адреса",
+      "password": "пароль",
+      "password_placeholder": "введіть пароль",
+      "wrong_password": "Невірний пароль",
+      "or": "або",
+      "sign_in": "увійти",
+      "forgot_password": "Забули свій пароль?",
+      "reset_password": "Відновлення",
+      "no_account": "Немає облікового запису?",
+      "signup": "Реєстрація",
+      "lang": "Мова",
+      "sign_up": "Реєстрація",
+      "username": "Ім'я користувача",
+      "username_placeholder": "Devwise123",
+      "sign_up_button": "зареєструватися",
+      "have_account": "Чи є у вас обліковий запис?",
+      "sign_up_condition": "Реєструючись, я даю згоду на обробку моїх персональних даних",
+      "privacy_policy": "Політика конфіденційності",
+      "repeat_password": "Повторіть пароль",
+      "password_not_match": "Невідповідність пароля"
     }
-}  
+  }
+}

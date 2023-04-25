@@ -1,6 +1,29 @@
 {
-    "en-US": {
-      "translation": {
-      }
+  "en-US": {
+    "translation": {
+      "login": "login",
+      "email": "Email",
+      "email_placeholder": "Example@gmail.com",
+      "email_not_allowed_chars": "Invalid email",
+      "password": "password",
+      "password_placeholder": "enter password",
+      "wrong_password": "Incorrect password",
+      "or": "or",
+      "sign_in": "Sign in",
+      "forgot_password": "Forgot your password?",
+      "reset_password": "Restore",
+      "no_account": "No account?",
+      "signup": "Registration",
+      "lang": "Language",
+      "sign_up": "Registration",
+      "username": "Username",
+      "username_placeholder": "Devwise123",
+      "sign_up_button": "Register",
+      "have_account": "Do you have an account?",
+      "sign_up_condition": "By registering, I consent to the processing of my personal data",
+      "privacy_policy": "Privacy Policy",
+      "repeat_password": "Repeat password",
+      "password_not_match": "Password mismatch"
     }
-}  
+  }
+}
